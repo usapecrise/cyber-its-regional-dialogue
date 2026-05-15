@@ -686,13 +686,6 @@ body {
     transform: translateY(-1px);
 }
 
-
-
-
-
-
-
-
 /* INFO CARDS */
 .info-card {
   background: #ffffff;
@@ -1196,32 +1189,43 @@ section#contact {
 /* PRIMARY */
 .btn-primary,
 .btn-xl {
-  background: #355f7c !important;
+  background: rgba(255,255,255,0.18) !important;
   color: #ffffff !important;
-  border: none !important;
-  box-shadow: 0 8px 22px rgba(53,95,124,0.3);
+
+  border: 1px solid rgba(255,255,255,0.28) !important;
+
+  box-shadow: 0 8px 22px rgba(0,0,0,0.12);
+
+  backdrop-filter: blur(8px);
 }
 
 /* PRIMARY HOVER */
 .btn-primary:hover,
 .btn-xl:hover {
-  background: #2c4f68 !important;
+  background: rgba(255,255,255,0.26) !important;
+
   transform: translateY(-2px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+
+  box-shadow: 0 10px 25px rgba(0,0,0,0.16);
 }
 
 /* SECONDARY */
 .btn-secondary {
-  background: rgba(255,255,255,0.9);
+  background: rgba(255,255,255,0.88);
+
   color: #355f7c !important;
-  border: 1px solid rgba(53,95,124,0.2);
+
+  border: 1px solid rgba(255,255,255,0.35);
+
   box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-  backdrop-filter: blur(6px);
+
+  backdrop-filter: blur(8px);
 }
 
 /* SECONDARY HOVER */
 .btn-secondary:hover {
   background: #ffffff;
+
   transform: translateY(-2px);
 }
 
