@@ -138,13 +138,13 @@ header .intro-text {
 }
 
 header .intro-text .intro-heading {
-    margin-bottom: 20px;
+    margin-bottom: 18px;
     text-transform: uppercase;
     font-family: {{ site.data.template.font.primary }};
-    font-size: 28px;
+    font-size: 36px;
     font-weight: 700;
-    line-height: 1.2;
-    letter-spacing: 1px;
+    line-height: 1.15;
+    letter-spacing: 0.5px;
 }
 
 @media(min-width:768px) {    
@@ -163,16 +163,18 @@ header .intro-text .intro-heading {
     opacity: 0.9;
 }
 
-    header .intro-text .intro-heading {
-        margin-bottom: 50px;
-        text-transform: uppercase;
-        font-family: {{ site.data.template.font.primary }};
-        font-size: 75px;
-        font-weight: 700;
-        line-height: 75px;
+	header .intro-text .intro-heading {
+     margin-bottom: 28px;
+     text-transform: uppercase;
+     font-family: {{ site.data.template.font.primary }};
+     font-size: 52px;
+     font-weight: 700;
+     line-height: 1.12;
+     max-width: 920px;
+     margin-left: auto;
+     margin-right: auto;
     }
 }
-
 
 header .intro-heading {
     text-shadow: 0 3px 10px rgba(0,0,0,0.25);
