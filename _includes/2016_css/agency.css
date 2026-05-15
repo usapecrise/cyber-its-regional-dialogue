@@ -1168,9 +1168,8 @@ section#contact {
 }
 
 
-/* ===== CLEAN BUTTON SYSTEM ===== */
+/* ===== BUTTONS ===== */
 
-/* Base (applies to ALL buttons) */
 .btn,
 .btn-primary,
 .btn-secondary,
@@ -1189,37 +1188,38 @@ section#contact {
 /* PRIMARY */
 .btn-primary,
 .btn-xl {
-  background: rgba(255,255,255,0.18) !important;
+  background: rgba(255,255,255,0.28) !important;
+
   color: #ffffff !important;
 
-  border: 1px solid rgba(255,255,255,0.28) !important;
+  border: 1px solid rgba(255,255,255,0.45) !important;
 
-  box-shadow: 0 8px 22px rgba(0,0,0,0.12);
+  box-shadow: 0 10px 28px rgba(0,0,0,0.22);
 
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(10px);
 }
 
 /* PRIMARY HOVER */
 .btn-primary:hover,
 .btn-xl:hover {
-  background: rgba(255,255,255,0.26) !important;
+  background: rgba(255,255,255,0.38) !important;
 
   transform: translateY(-2px);
 
-  box-shadow: 0 10px 25px rgba(0,0,0,0.16);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.25);
 }
 
 /* SECONDARY */
 .btn-secondary {
-  background: rgba(255,255,255,0.88);
+  background: rgba(255,255,255,0.92);
 
   color: #355f7c !important;
 
-  border: 1px solid rgba(255,255,255,0.35);
+  border: 1px solid rgba(255,255,255,0.55);
 
-  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  box-shadow: 0 8px 22px rgba(0,0,0,0.14);
 
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(10px);
 }
 
 /* SECONDARY HOVER */
@@ -1228,13 +1228,6 @@ section#contact {
 
   transform: translateY(-2px);
 }
-
-.btn-primary,
-.btn-secondary,
-.btn-xl {
-  line-height: 1.2 !important;
-}
-
 /* ===== NAVBAR BASE ===== */
 
 .navbar-default {
