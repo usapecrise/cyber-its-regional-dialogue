@@ -5,242 +5,122 @@
       Agenda
     </h2>
 
+    <!-- =========================
+         TABS
+    ========================= -->
+
+    <div class="agenda-tabs">
+
+      <button class="agenda-tab active"
+              onclick="showAgendaDay('day1', this)">
+        Day 1
+      </button>
+
+      <button class="agenda-tab"
+              onclick="showAgendaDay('day2', this)">
+        Day 2
+      </button>
+
+    </div>
+
     <div class="agenda-wrapper">
 
       <!-- ========================= -->
       <!-- DAY 1 -->
       <!-- ========================= -->
 
-      <div class="agenda-day-block">
+      <div id="day1" class="agenda-day-content active-day">
 
-        <div class="agenda-day-number">
-          Day 1
-        </div>
+        <div class="agenda-day-block">
 
-        <div class="agenda-day-theme">
-          Context, Best Practice & Interactive Case Study
-        </div>
-
-      </div>
-
-      <!-- ARRIVAL -->
-      <div class="agenda-card registration">
-        <div class="agenda-time">8:30 AM – 9:00 AM</div>
-
-        <div class="agenda-content">
-          <div class="agenda-title">
-            <i class="fa fa-sign-in"></i> Registration and Arrival
-          </div>
-        </div>
-      </div>
-
-      <!-- OPENING -->
-      <div class="agenda-card welcome">
-        <div class="agenda-time">9:00 AM – 9:10 AM</div>
-
-        <div class="agenda-content">
-          <div class="agenda-title">
-            <i class="fa fa-comments"></i> Welcome and Opening Remarks
+          <div class="agenda-day-number">
+            Day 1
           </div>
 
-          <div class="agenda-desc" style="margin-top:6px;">
-            XXX, TBD Thailand<br>
-            Joseph Traini, Head of U.S. Delegation, U.S. Department of Transportation
-          </div>
-        </div>
-      </div>
-
-      <!-- OVERVIEW -->
-      <div class="agenda-card">
-        <div class="agenda-time">9:10 AM – 9:30 AM</div>
-
-        <div class="agenda-content">
-
-          <div class="agenda-title">
-            Overview of the Agenda & Framing the Toolkit
-          </div>
-
-          <div class="agenda-desc">
-            Summary of the agenda, highlighting themes of operational readiness, human awareness, and cyber hygiene practices and an introduction to the Transport Cyber Hygiene Toolkit concept and how economy contributions during the dialogue will shape the content.
-          </div>
-
-          <div class="agenda-desc" style="margin-top:8px;">
-            Susannah Kob-Horton, Technical Director, US-APEC RISE, Cadmus
+          <div class="agenda-day-theme">
+            Context, Best Practice & Interactive Case Study
           </div>
 
         </div>
-      </div>
 
-      <!-- SESSION 1 -->
-      <div class="agenda-session-label">Session 1</div>
+        <!-- ARRIVAL -->
+        <div class="agenda-card registration">
+          <div class="agenda-time">8:30 AM – 9:00 AM</div>
 
-      <div class="agenda-card">
-        <div class="agenda-time">9:30 AM – 10:20 AM</div>
-
-        <div class="agenda-content">
-
-          <div class="agenda-title">
-            Panel: ITS Cyber Threat Landscape Across Transport Sectors
-          </div>
-
-          <div class="agenda-desc">
-            This session will be a facilitated conversation that will highlight the need for robust ITS cybersecurity across APEC economies by examining the threat environment faced by ITS sectors (aviation, rail, maritime, road/transit). The discussion will cover distinct cyber threat vectors, attack surfaces, and recent real-world incidents in the transport sector.
-          </div>
-
-        </div>
-      </div>
-
-      <!-- BREAK -->
-      <div class="agenda-card break">
-        <div class="agenda-time">10:20 AM – 10:40 AM</div>
-
-        <div class="agenda-content">
-          <div class="agenda-title">
-            <i class="fa fa-coffee"></i> Coffee
+          <div class="agenda-content">
+            <div class="agenda-title">
+              <i class="fa fa-sign-in"></i> Registration and Arrival
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- SESSION 2 -->
-      <div class="agenda-session-label">Session 2</div>
+        <!-- OPENING -->
+        <div class="agenda-card welcome">
+          <div class="agenda-time">9:00 AM – 9:10 AM</div>
 
-      <div class="agenda-card">
-        <div class="agenda-time">10:40 AM – 11:10 AM</div>
+          <div class="agenda-content">
+            <div class="agenda-title">
+              <i class="fa fa-comments"></i> Welcome and Opening Remarks
+            </div>
 
-        <div class="agenda-content">
-
-          <div class="agenda-title">
-            Scene Setting: Establishing a Shared Vocabulary on Cybersecurity & Cyber Hygiene
-          </div>
-
-          <div class="agenda-desc">
-            This session will establish a shared vocabulary around cybersecurity and cyber hygiene by providing a brief overview of international cybersecurity standards and frameworks that can be applied to the transport sector.
-          </div>
-
-        </div>
-      </div>
-
-      <!-- SESSION 3 -->
-      <div class="agenda-session-label">Session 3</div>
-
-      <div class="agenda-card">
-        <div class="agenda-time">11:10 AM – 12:10 PM</div>
-
-        <div class="agenda-content">
-
-          <div class="agenda-title">
-            Presentations: Economy Spotlights: Approaches to ITS Cybersecurity across APEC
-          </div>
-
-          <div class="agenda-desc">
-            This session will include short, structured presentations from economies followed by an open dialogue highlighting domestic initiatives and policy approaches to ITS cybersecurity.
-          </div>
-
-        </div>
-      </div>
-
-      <!-- LUNCH -->
-      <div class="agenda-card lunch">
-        <div class="agenda-time">12:10 PM – 1:40 PM</div>
-
-        <div class="agenda-content">
-          <div class="agenda-title">
-            <i class="fa fa-cutlery"></i> Lunch
           </div>
         </div>
-      </div>
 
-      <!-- SESSION 4 -->
-      <div class="agenda-session-label">Session 4</div>
+        <!-- OVERVIEW -->
+        <div class="agenda-card">
+          <div class="agenda-time">9:10 AM – 9:30 AM</div>
 
-      <div class="agenda-card">
-        <div class="agenda-time">1:40 PM – 2:30 PM</div>
+          <div class="agenda-content">
 
-        <div class="agenda-content">
+            <div class="agenda-title">
+              Overview of the Agenda & Framing the Toolkit
+            </div>
 
-          <div class="agenda-title">
-            Panel: Cyber Hygiene & Workforce Training: Building a Human Line of Defense
-          </div>
-
-          <div class="agenda-desc">
-            This session will emphasize the human dimensions of transport cybersecurity, where people can be both the greatest vulnerability and, at times, the most underinvested layer of defense.
-          </div>
-
-        </div>
-      </div>
-
-      <!-- SESSION 5 -->
-      <div class="agenda-session-label">Session 5</div>
-
-      <div class="agenda-card">
-        <div class="agenda-time">2:30 PM – 3:20 PM</div>
-
-        <div class="agenda-content">
-
-          <div class="agenda-title">
-            Panel: AI as a Cyber Defender in the Transport Sector
-          </div>
-
-          <div class="agenda-desc">
-            This expert-led session will explore how artificial intelligence is being applied as a defensive tool in transport cybersecurity, including AI-enabled threat detection and anomaly monitoring.
-          </div>
-
-        </div>
-      </div>
-
-      <!-- BREAK -->
-      <div class="agenda-card break">
-        <div class="agenda-time">3:20 PM – 3:40 PM</div>
-
-        <div class="agenda-content">
-          <div class="agenda-title">
-            <i class="fa fa-coffee"></i> Coffee
           </div>
         </div>
-      </div>
 
-      <!-- SESSION 6 -->
-      <div class="agenda-session-label">Session 6</div>
-
-      <div class="agenda-card">
-        <div class="agenda-time">3:40 PM – 4:50 PM</div>
-
-        <div class="agenda-content">
-
-          <div class="agenda-title">
-            Interactive Case Study: What Would You Do?
-          </div>
-
-          <div class="agenda-desc">
-            Participants break into groups and take part in an interactive case study simulating a coordinated cyber incident affecting transport sectors.
-          </div>
-
-        </div>
-      </div>
-
-      <!-- WRAP -->
-      <div class="agenda-card closing">
-        <div class="agenda-time">4:50 PM – 5:00 PM</div>
-
-        <div class="agenda-content">
-          <div class="agenda-title">
-            <i class="fa fa-flag-checkered"></i> Day 1 Wrap-Up & Preview of Day 2
-          </div>
-        </div>
       </div>
 
       <!-- ========================= -->
       <!-- DAY 2 -->
       <!-- ========================= -->
 
-      <div class="agenda-day-block day-two">
+      <div id="day2" class="agenda-day-content">
 
-        <div class="agenda-day-number">
-          Day 2
+        <div class="agenda-day-block">
+
+          <div class="agenda-day-number">
+            Day 2
+          </div>
+
+          <div class="agenda-day-theme">
+            Economy Experiences & Coordination, Sector Deep Dives & Toolkit Inputs
+          </div>
+
         </div>
 
-        <div class="agenda-day-theme">
-          Economy Experiences & Coordination, Sector Deep Dives & Toolkit Inputs
+        <!-- ARRIVAL -->
+        <div class="agenda-card registration">
+          <div class="agenda-time">8:30 AM – 9:00 AM</div>
+
+          <div class="agenda-content">
+            <div class="agenda-title">
+              <i class="fa fa-sign-in"></i> Registration and Arrival
+            </div>
+          </div>
+        </div>
+
+        <!-- OPENING -->
+        <div class="agenda-card welcome">
+          <div class="agenda-time">9:00 AM – 9:10 AM</div>
+
+          <div class="agenda-content">
+            <div class="agenda-title">
+              <i class="fa fa-comments"></i> Welcome & Overview of Day 2
+            </div>
+
+
+          </div>
         </div>
 
       </div>
@@ -249,3 +129,27 @@
 
   </div>
 </section>
+
+<script>
+function showAgendaDay(dayId, button) {
+
+  // hide all content
+  document.querySelectorAll('.agenda-day-content')
+    .forEach(day => {
+      day.classList.remove('active-day');
+    });
+
+  // remove active tab
+  document.querySelectorAll('.agenda-tab')
+    .forEach(tab => {
+      tab.classList.remove('active');
+    });
+
+  // show selected day
+  document.getElementById(dayId)
+    .classList.add('active-day');
+
+  // activate selected button
+  button.classList.add('active');
+}
+</script>
