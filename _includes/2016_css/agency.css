@@ -116,8 +116,8 @@ header {
 
     background:
         linear-gradient(
-            rgba(0, 40, 60, 0.22),
-            rgba(0, 40, 60, 0.22)
+            rgba(0, 40, 60, 0.30),
+            rgba(0, 40, 60, 0.30)
         ),
         url('/cyber-its-regional-dialogue/css/2016_style/img/its-hero-2026.jpg');
 
@@ -1234,6 +1234,7 @@ section#contact {
 
 .btn-primary {
   background: #355f7c !important;
+ !important;
 
   color: #ffffff !important;
 
