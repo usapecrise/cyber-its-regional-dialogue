@@ -115,7 +115,7 @@ header {
     color: #fff;
     background:
         linear-gradient(rgba(0, 40, 60, 0.35), rgba(0, 40, 60, 0.35)),
-        url('{{ site.baseurl }}/css/2016_style/img/cyber-resilient-its-dialogue.jpeg');
+        url('{{ site.baseurl }}/css/2016_style/img/cyber-resilient-its-dialogue.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
