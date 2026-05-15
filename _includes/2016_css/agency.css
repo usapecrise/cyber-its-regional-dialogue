@@ -113,8 +113,12 @@ header {
     height: 100vh;
     text-align: center;
     color: #fff;
+
     background:
-        linear-gradient(rgba(0, 40, 60, 0.35), rgba(0, 40, 60, 0.35)),
+        linear-gradient(
+            rgba(0, 40, 60, 0.22),
+            rgba(0, 40, 60, 0.22)
+        ),
         url('/cyber-its-regional-dialogue/css/2016_style/img/its-hero-2026.jpg');
 
     background-position: center center;
