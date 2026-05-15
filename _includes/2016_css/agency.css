@@ -1530,49 +1530,65 @@ html {
 .agenda-tabs {
   display: flex;
 
-  justify-content: center;
+  justify-content: flex-start;
 
-  gap: 12px;
+  gap: 0;
 
-  margin: 35px 0 40px 0;
+  margin: 35px 0 0 0;
+
+  border-bottom: 1px solid #dce5ee;
 }
 
 .agenda-tab {
-  border: 1px solid #d7e1ea;
+  background: #eef3f8;
 
-  background: #ffffff;
+  color: #5f7388;
 
-  color: #355f7c;
+  border: 1px solid #dce5ee;
 
-  padding: 12px 22px;
+  border-bottom: none;
 
-  border-radius: 999px;
+  padding: 14px 28px;
 
   font-size: 14px;
 
   font-weight: 600;
 
-  transition: all 0.2s ease;
-
   cursor: pointer;
 
-  box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+  transition: all 0.2s ease;
+
+  margin-bottom: -1px;
+
+  position: relative;
+
+  top: 1px;
 }
 
-.agenda-tab:hover {
-  transform: translateY(-1px);
-
-  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+/* rounded outer corners only */
+.agenda-tab:first-child {
+  border-top-left-radius: 10px;
 }
 
+.agenda-tab:last-child {
+  border-top-right-radius: 10px;
+}
+
+/* ACTIVE TAB */
 .agenda-tab.active {
-  background: #355f7c;
+  background: #ffffff;
 
-  color: #ffffff;
+  color: #1f3a5f;
 
-  border-color: #355f7c;
+  border-color: #dce5ee;
+
+  z-index: 2;
 }
 
+/* HOVER */
+.agenda-tab:hover:not(.active) {
+  background: #f5f8fb;
+}
 
 /* =========================
    DAY CONTENT
