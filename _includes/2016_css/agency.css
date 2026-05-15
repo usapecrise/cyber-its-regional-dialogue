@@ -804,7 +804,49 @@ body {
 .agenda-title i {
   font-size: 14px;
 }
+/* =========================
+   DAY HEADERS
+========================= */
 
+.agenda-day-block {
+  margin: 52px 0 30px 0;
+
+  padding-bottom: 16px;
+
+  border-bottom: 1px solid #dce5ee;
+
+  text-align: left;
+}
+
+.agenda-day-number {
+  font-size: 12px;
+
+  font-weight: 700;
+
+  text-transform: uppercase;
+
+  letter-spacing: 1.5px;
+
+  color: #355f7c;
+
+  margin-bottom: 6px;
+}
+
+.agenda-day-theme {
+  font-size: 28px;
+
+  line-height: 1.25;
+
+  font-weight: 600;
+
+  color: #1f3447;
+
+  max-width: 780px;
+}
+
+.day-two {
+  margin-top: 70px;
+}
 
 
 
