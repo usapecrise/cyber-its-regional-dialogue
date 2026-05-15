@@ -1090,6 +1090,21 @@ section#contact {
   border-left: 4px solid #c7a17a;
 }
 
+/* ===== LUNCH ===== */
+.agenda-card.lunch {
+  background: #eef4f8;
+  border: 1px solid #d9e5ef;
+  border-left: 4px solid #7fa4bf;
+}
+
+.agenda-card.lunch .agenda-title {
+  color: #355f7c;
+}
+
+.agenda-card.lunch i {
+  color: #7fa4bf;
+}
+
 .venue-card {
   background: #ffffff;
   border-radius: 16px;
