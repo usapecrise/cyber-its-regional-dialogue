@@ -1054,12 +1054,9 @@ section#contact {
 }
 
 /* ===== SESSIONS (default = white but defined clearly) ===== */
-.agenda-card:not(.registration):not(.welcome):not(.closing):not(.break) {
+.agenda-card:not(.registration):not(.welcome):not(.closing):not(.break):not(.lunch) {
   background: #ffffff;
 }
-
-
-
 
 /* REGISTRATION */
 .agenda-card.registration {
