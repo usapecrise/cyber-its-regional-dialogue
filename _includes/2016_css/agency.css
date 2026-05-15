@@ -1523,6 +1523,109 @@ html {
   text-shadow: 0 2px 8px rgba(0,0,0,0.3);
 }
 
+/* =========================
+   AGENDA TABS
+========================= */
+
+.agenda-tabs {
+  display: flex;
+
+  justify-content: center;
+
+  gap: 12px;
+
+  margin: 35px 0 40px 0;
+}
+
+.agenda-tab {
+  border: 1px solid #d7e1ea;
+
+  background: #ffffff;
+
+  color: #355f7c;
+
+  padding: 12px 22px;
+
+  border-radius: 999px;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  transition: all 0.2s ease;
+
+  cursor: pointer;
+
+  box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+}
+
+.agenda-tab:hover {
+  transform: translateY(-1px);
+
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+
+.agenda-tab.active {
+  background: #355f7c;
+
+  color: #ffffff;
+
+  border-color: #355f7c;
+}
+
+
+/* =========================
+   DAY CONTENT
+========================= */
+
+.agenda-day-content {
+  display: none;
+}
+
+.active-day {
+  display: block;
+}
+
+
+/* =========================
+   DAY HEADERS
+========================= */
+
+.agenda-day-block {
+  margin: 10px 0 30px 0;
+
+  padding-bottom: 16px;
+
+  border-bottom: 1px solid #dce5ee;
+
+  text-align: left;
+}
+
+.agenda-day-number {
+  font-size: 12px;
+
+  font-weight: 700;
+
+  text-transform: uppercase;
+
+  letter-spacing: 1.5px;
+
+  color: #355f7c;
+
+  margin-bottom: 6px;
+}
+
+.agenda-day-theme {
+  font-size: 28px;
+
+  line-height: 1.25;
+
+  font-weight: 600;
+
+  color: #1f3447;
+
+  max-width: 780px;
+}
 	
 
 
