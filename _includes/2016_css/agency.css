@@ -1674,7 +1674,7 @@ html {
 }
 
 .agenda-row .agenda-content {
-  min-width: 0;
+  padding-left: 18px;
 }
 
 .agenda-row .agenda-title {
