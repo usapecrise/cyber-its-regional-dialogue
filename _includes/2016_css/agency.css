@@ -1339,80 +1339,93 @@ html {
    AGENDA TABS
 ====================================================== */
 
+/* ======================================================
+   AGENDA TABS
+====================================================== */
+
 .agenda-tabs {
   display: flex;
 
-  gap: 12px;
+  justify-content: flex-start;
 
-  margin: 0 0 30px 0;
+  gap: 0;
 
-  flex-wrap: wrap;
+  margin: 35px 0 0 0;
+
+  border-bottom: 1px solid #dce5ee;
 }
 
 
-/* TAB BUTTON */
+/* TAB */
 
 .agenda-tab {
-  appearance: none;
+  background: #eef3f8;
 
-  border: 1px solid #d8e2ec;
+  color: #5f7388;
 
-  background: #f4f7fa;
+  border: 1px solid #dce5ee;
 
-  color: #5d7287;
+  border-bottom: none;
 
-  padding: 12px 22px;
-
-  border-radius: 999px;
+  padding: 14px 28px;
 
   font-size: 14px;
 
   font-weight: 600;
 
-  letter-spacing: 0.2px;
-
   cursor: pointer;
 
   transition: all 0.2s ease;
 
-  box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+  margin-bottom: -1px;
+
+  position: relative;
+
+  top: 1px;
 }
 
 
-/* HOVER */
+/* rounded outer corners */
+.agenda-tab:first-child {
+  border-top-left-radius: 12px;
+}
 
-.agenda-tab:hover {
-  background: #eef3f8;
-
-  transform: translateY(-1px);
+.agenda-tab:last-child {
+  border-top-right-radius: 12px;
 }
 
 
 /* ACTIVE */
 
 .agenda-tab.active {
-  background: linear-gradient(
-    135deg,
-    #355f7c 0%,
-    #4e7594 100%
-  );
+  background: #ffffff;
 
-  color: #ffffff;
+  color: #1f3a5f;
 
-  border-color: transparent;
+  border-color: #dce5ee;
+
+  z-index: 2;
 
   box-shadow:
-    0 6px 14px rgba(53,95,124,0.18),
-    0 12px 24px rgba(53,95,124,0.12);
+    0 -2px 10px rgba(0,0,0,0.03);
+}
+
+
+/* HOVER */
+
+.agenda-tab:hover:not(.active) {
+  background: #f5f8fb;
 }
 
 
 /* ======================================================
-   TAB CONTENT
+   CONTENT
 ====================================================== */
 
 .agenda-day-content {
   display: none;
+
+  padding-top: 28px;
 }
 
 .agenda-day-content.active-day {
@@ -1427,13 +1440,15 @@ html {
 @media (max-width: 768px) {
 
   .agenda-tabs {
-    gap: 10px;
+    overflow-x: auto;
+
+    flex-wrap: nowrap;
   }
 
   .agenda-tab {
-    width: 100%;
+    white-space: nowrap;
 
-    text-align: center;
+    flex-shrink: 0;
   }
 }
 /* ======================================================
