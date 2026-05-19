@@ -1335,68 +1335,107 @@ html {
   text-shadow: 0 2px 8px rgba(0,0,0,0.3);
 }
 
-/* =========================
+/* ======================================================
    AGENDA TABS
-========================= */
+====================================================== */
 
 .agenda-tabs {
   display: flex;
 
-  justify-content: flex-start;
+  gap: 12px;
 
-  gap: 0;
+  margin: 0 0 30px 0;
 
-  margin: 35px 0 0 0;
-
-  border-bottom: 1px solid #dce5ee;
+  flex-wrap: wrap;
 }
 
+
+/* TAB BUTTON */
+
 .agenda-tab {
-  background: #eef3f8;
+  appearance: none;
 
-  color: #5f7388;
+  border: 1px solid #d8e2ec;
 
-  border: 1px solid #dce5ee;
+  background: #f4f7fa;
 
-  border-bottom: none;
+  color: #5d7287;
 
-  padding: 14px 28px;
+  padding: 12px 22px;
+
+  border-radius: 999px;
 
   font-size: 14px;
 
   font-weight: 600;
 
+  letter-spacing: 0.2px;
+
   cursor: pointer;
 
   transition: all 0.2s ease;
 
-  margin-bottom: -1px;
-
-  position: relative;
-
-  top: 1px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.03);
 }
 
-/* rounded outer corners only */
-.agenda-tab:first-child {
-  border-top-left-radius: 10px;
+
+/* HOVER */
+
+.agenda-tab:hover {
+  background: #eef3f8;
+
+  transform: translateY(-1px);
 }
 
-.agenda-tab:last-child {
-  border-top-right-radius: 10px;
-}
 
-/* ACTIVE TAB */
+/* ACTIVE */
+
 .agenda-tab.active {
-  background: #ffffff;
+  background: linear-gradient(
+    135deg,
+    #355f7c 0%,
+    #4e7594 100%
+  );
 
-  color: #1f3a5f;
+  color: #ffffff;
 
-  border-color: #dce5ee;
+  border-color: transparent;
 
-  z-index: 2;
+  box-shadow:
+    0 6px 14px rgba(53,95,124,0.18),
+    0 12px 24px rgba(53,95,124,0.12);
 }
 
+
+/* ======================================================
+   TAB CONTENT
+====================================================== */
+
+.agenda-day-content {
+  display: none;
+}
+
+.agenda-day-content.active-day {
+  display: block;
+}
+
+
+/* ======================================================
+   MOBILE
+====================================================== */
+
+@media (max-width: 768px) {
+
+  .agenda-tabs {
+    gap: 10px;
+  }
+
+  .agenda-tab {
+    width: 100%;
+
+    text-align: center;
+  }
+}
 /* ======================================================
    AGENDA WRAPPER
 ====================================================== */
