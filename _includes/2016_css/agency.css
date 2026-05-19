@@ -1654,10 +1654,11 @@ html {
 }
 
 .agenda-row {
-  display: flex;
+  display: grid;
+  grid-template-columns: 220px 1fr;
   gap: 24px;
   padding: 22px 24px;
-  align-items: flex-start;
+  align-items: start;
 }
 
 .agenda-row-divider {
