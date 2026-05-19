@@ -1668,8 +1668,8 @@ html {
 }
 
 .agenda-row .agenda-time {
-  min-width: 140px;
-  width: 140px;
+  min-width: 170px;
+  width: 170px;
   flex-shrink: 0;
 }
 
