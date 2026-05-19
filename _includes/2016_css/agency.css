@@ -1664,11 +1664,6 @@ html {
 
   flex-shrink: 0;
 }
-
-.agenda-row .agenda-content {
-  padding-left: 18px;
-}
-
 .agenda-row .agenda-title {
   margin: 0;
 }
@@ -1686,5 +1681,4 @@ html {
 
 .agenda-card.lunch i {
   color: #7fa4bf;
-  line-height: 1.45;
 }
