@@ -1654,16 +1654,35 @@ html {
 }
 
 .agenda-row {
-  display: grid;
-  grid-template-columns: 220px 1fr;
-  gap: 24px;
-  padding: 22px 24px;
-  align-items: start;
+  display: flex;
+  align-items: flex-start;
+  padding: 26px 36px;
+  gap: 48px;
 }
 
 .agenda-row-divider {
   height: 1px;
-  background: rgba(0,0,0,0.08);
-  margin: 0 24px;
+  background: rgba(31,58,95,0.12);
+  margin: 0 36px;
 }
 
+/* TIME COLUMN */
+.agenda-row .agenda-time {
+  width: 240px;
+  min-width: 240px;
+  flex-shrink: 0;
+
+  font-weight: 700;
+  color: #163d6b;
+  line-height: 1.4;
+}
+
+/* TITLE COLUMN */
+.agenda-row .agenda-content {
+  flex: 1;
+}
+
+.agenda-row .agenda-title {
+  margin: 0;
+  line-height: 1.45;
+}
