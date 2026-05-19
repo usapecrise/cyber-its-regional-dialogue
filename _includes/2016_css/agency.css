@@ -1655,15 +1655,12 @@ html {
 }
 
 .agenda-row {
-  display: grid !important;
+  display: flex !important;
+  align-items: flex-start;
 
-  grid-template-columns: 190px 1fr;
+  gap: 20px;
 
-  align-items: start;
-
-  padding: 24px 32px;
-
-  gap: 24px;
+  padding: 22px;
 }
 
 .agenda-row-divider {
@@ -1671,13 +1668,9 @@ html {
 }
 
 .agenda-row .agenda-time {
-  width: auto !important;
-  min-width: 0 !important;
-  margin: 0;
-
-  font-weight: 700;
-  color: #163d6b;
-  line-height: 1.4;
+  min-width: 140px;
+  width: 140px;
+  flex-shrink: 0;
 }
 
 .agenda-row .agenda-content {
