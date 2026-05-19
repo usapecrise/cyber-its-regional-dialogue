@@ -1648,5 +1648,21 @@ html {
   max-width: 780px;
 }
 	
+.grouped-agenda-card {
+  padding: 0;
+  overflow: hidden;
+}
 
+.agenda-row {
+  display: flex;
+  gap: 24px;
+  padding: 22px 24px;
+  align-items: flex-start;
+}
+
+.agenda-row-divider {
+  height: 1px;
+  background: rgba(0,0,0,0.08);
+  margin: 0 24px;
+}
 
