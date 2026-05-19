@@ -1511,14 +1511,15 @@ html {
 .agenda-row {
   display: grid;
 
-  grid-template-columns: 260px 1fr;
+  grid-template-columns: 280px 1fr;
 
-  gap: 28px;
+  gap: 26px;
 
-  padding: 26px 30px;
+  padding: 24px 30px;
 
-  align-items: start;
+  align-items: center;
 }
+
 
 
 /* ======================================================
@@ -1549,11 +1550,11 @@ html {
 
   color: #143d66;
 
-  line-height: 1.4;
-
   white-space: nowrap;
 
-  letter-spacing: -0.2px;
+  line-height: 1.35;
+
+  margin: 0;
 }
 
 
@@ -1566,10 +1567,6 @@ html {
 }
 
 .agenda-title {
-  display: flex;
-  align-items: flex-start;
-  gap: 10px;
-
   margin: 0;
 
   font-size: 17px;
@@ -1581,15 +1578,23 @@ html {
   color: #183b63;
 }
 
-.agenda-title i {
-  margin-top: 3px;
+.agenda-title.with-icon {
+  display: flex;
 
+  align-items: center;
+
+  gap: 10px;
+}
+
+.agenda-title.with-icon i {
   font-size: 15px;
 
   color: #5c7d99;
 
   flex-shrink: 0;
 }
+
+
 
 .agenda-desc {
   margin-top: 8px;
