@@ -1649,15 +1649,19 @@ html {
 }
 	
 .grouped-agenda-card {
-  padding: 0;
+  display: block !important;
+  padding: 0 !important;
   overflow: hidden;
 }
 
 .agenda-row {
-  display: flex;
-  align-items: flex-start;
+  display: grid !important;
+  grid-template-columns: 240px 1fr;
+
+  align-items: start;
+
   padding: 26px 36px;
-  gap: 48px;
+  gap: 36px;
 }
 
 .agenda-row-divider {
@@ -1666,20 +1670,18 @@ html {
   margin: 0 36px;
 }
 
-/* TIME COLUMN */
 .agenda-row .agenda-time {
-  width: 240px;
-  min-width: 240px;
-  flex-shrink: 0;
+  width: auto !important;
+  min-width: 0 !important;
+  margin: 0;
 
   font-weight: 700;
   color: #163d6b;
   line-height: 1.4;
 }
 
-/* TITLE COLUMN */
 .agenda-row .agenda-content {
-  flex: 1;
+  min-width: 0;
 }
 
 .agenda-row .agenda-title {
