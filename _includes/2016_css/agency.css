@@ -722,129 +722,7 @@ body {
   box-shadow: 0 10px 25px rgba(0,0,0,0.08);
 }
 
-/* WRAPPER */
-.agenda-wrapper {
-  max-width: 850px;
-  margin: 0 auto;
-}
 
-/* CARD */
-.agenda-card {
-  background: #ffffff;
-  border-radius: 12px;
-  padding: 18px 22px;
-  margin-bottom: 14px;
-  display: flex;
-  gap: 20px;
-  align-items: flex-start;
-  border: 1px solid #e6edf3;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
-}
-
-/* TIME */
-.agenda-time {
-  min-width: 140px;
-  font-weight: 600;
-  color: #1f3a5f;
-}
-
-/* CONTENT */
-.agenda-title {
-  font-weight: 600;
-  color: #1f3a5f;
-  margin-bottom: 4px;
-}
-
-.agenda-desc {
-  font-size: 14px;
-  color: #6b7c8f;
-  margin-bottom: 6px;
-}
-
-.agenda-speakers {
-  font-size: 13px;
-  color: #4a5d73;
-}
-
-/* SESSION LABEL */
-.agenda-session-label {
-  font-size: 12px;
-  letter-spacing: 1px;
-  color: #8aa0b5;
-  margin: 25px 0 8px;
-  text-transform: uppercase;
-}
-
-.agenda-card.break {
-  background: #fdf8f2;
-  border: 1px solid #f0e2d0;
-  border-left: 4px solid #c7a17a;
-  display: flex;
-  gap: 10px;
-  align-items: flex-start;
-}
-
-/* icon */
-.agenda-card.break i {
-  color: #c7a17a;
-  font-size: 16px;
-}
-
-/* text */
-.agenda-card.break .agenda-title {
-  color: #7a5c3e;
-  font-weight: 600;
-}
-
-/* PUSH TITLE RIGHT */
-.agenda-card.break .agenda-content {
-  padding-left: 18px;
-}
-/* ICON ALIGNMENT */
-.agenda-title {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.agenda-title i {
-  font-size: 14px;
-}
-/* =========================
-   DAY HEADERS
-========================= */
-
-.agenda-day-block {
-  margin: 52px 0 30px 0;
-  padding-bottom: 16px;
-  text-align: left;
-}
-
-.agenda-day-number {
-  font-size: 12px;
-
-  font-weight: 700;
-
-  text-transform: uppercase;
-
-  letter-spacing: 1.5px;
-
-  color: #355f7c;
-
-  margin-bottom: 6px;
-}
-
-.agenda-day-theme {
-  font-size: 28px;
-
-  line-height: 1.25;
-
-  font-weight: 600;
-
-  color: #1f3447;
-
-  max-width: 780px;
-}
 
 .day-two {
   margin-top: 70px;
@@ -1083,45 +961,6 @@ section#contact {
   color: #2c3e50;
 }
 
-/* ===== BASE CARD ===== */
-.agenda-card {
-  background: #ffffff;
-  border-radius: 12px;
-  padding: 18px 22px;
-  margin-bottom: 14px;
-  display: flex;
-  gap: 20px;
-  align-items: flex-start;
-  border: 1px solid #e6edf3;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
-}
-
-/* ===== SESSIONS (default = white but defined clearly) ===== */
-.agenda-card:not(.registration):not(.welcome):not(.closing):not(.break):not(.lunch) {
-  background: #ffffff;
-}
-
-/* REGISTRATION */
-.agenda-card.registration {
-  background: #e6eff7;   /* stronger blue tint */
-  border: 1px solid #cdddea;
-  border-left: 4px solid #AFC9DF
-}
-.agenda-card.registration i {
-  color: #355f7c;
-}
-
-.agenda-card.welcome,
-.agenda-card.closing {
-  background: #eef3f8;              /* darker than before */
-  border: 1px solid #d6e2ee;        /* slightly stronger edge */
-  border-left: 4px solid #6f95b5;   /* more visible accent */
-}
-
-.agenda-card.welcome i,
-.agenda-card.closing i {
-  color: #355f7c;
-}
 
 
 
@@ -1475,26 +1314,6 @@ html {
   scroll-behavior: smooth;
 }
 
-/* ===== DAY LABEL ===== */
-.agenda-day-label {
-  margin-bottom: 24px;
-  padding: 18px 22px;
-
-  background: linear-gradient(
-    135deg,
-    #355f7c 0%,
-    #4d7391 100%
-  );
-
-  border-radius: 14px;
-
-  color: #ffffff;
-  font-size: 18px;
-  font-weight: 700;
-  letter-spacing: 0.3px;
-
-  box-shadow: 0 10px 24px rgba(53,95,124,0.18);
-}
 
 .intro-lead-in {
   max-width: 760px;
@@ -1578,107 +1397,260 @@ html {
   z-index: 2;
 }
 
-/* HOVER */
-.agenda-tab:hover:not(.active) {
-  background: #f5f8fb;
-}
+/* ======================================================
+   AGENDA WRAPPER
+====================================================== */
 
-/* =========================
-   DAY CONTENT
-========================= */
-
-.agenda-day-content {
-  display: none;
-}
-
-.active-day {
-  display: block;
+.agenda-wrapper {
+  max-width: 1050px;
+  margin: 0 auto;
 }
 
 
-/* =========================
-   DAY HEADERS
-========================= */
+/* ======================================================
+   DAY LABEL
+====================================================== */
 
-.agenda-day-block {
-  margin: 10px 0 30px 0;
+.agenda-day-label {
+  margin-bottom: 28px;
+  padding: 18px 24px;
 
-  padding-bottom: 16px;
+  background: linear-gradient(
+    135deg,
+    #355f7c 0%,
+    #4e7594 100%
+  );
 
-  border-bottom: 1px solid #dce5ee;
+  border-radius: 14px;
 
-  text-align: left;
-}
-
-.agenda-day-number {
-  font-size: 12px;
-
+  color: #ffffff;
+  font-size: 18px;
   font-weight: 700;
+  letter-spacing: 0.3px;
 
-  text-transform: uppercase;
-
-  letter-spacing: 1.5px;
-
-  color: #355f7c;
-
-  margin-bottom: 6px;
+  box-shadow: 0 10px 28px rgba(53,95,124,0.18);
 }
 
-.agenda-day-theme {
-  font-size: 28px;
 
-  line-height: 1.25;
+/* ======================================================
+   BASE CARD
+====================================================== */
 
-  font-weight: 600;
+.agenda-card {
+  background: #ffffff;
 
-  color: #1f3447;
+  border: 1px solid #dfe7ef;
 
-  max-width: 780px;
-}
-	
-.grouped-agenda-card {
-  display: block !important;
-  padding: 0 !important;
+  border-left: 5px solid #355f7c;
+
+  border-radius: 16px;
+
+  margin-bottom: 18px;
+
   overflow: hidden;
+
+  box-shadow:
+    0 4px 10px rgba(15,35,55,0.03),
+    0 12px 28px rgba(15,35,55,0.05);
+
+  transition: all 0.2s ease;
 }
+
+.agenda-card:hover {
+  transform: translateY(-1px);
+
+  box-shadow:
+    0 8px 18px rgba(15,35,55,0.05),
+    0 16px 34px rgba(15,35,55,0.07);
+}
+
+
+/* ======================================================
+   SINGLE ROW CARD
+====================================================== */
 
 .agenda-row {
-  display: flex !important;
-  align-items: flex-start;
+  display: grid;
 
-  gap: 20px;
+  grid-template-columns: 260px 1fr;
 
-  padding: 22px;
+  gap: 28px;
+
+  padding: 26px 30px;
+
+  align-items: start;
 }
 
-.agenda-row-divider {
-  margin: 0 32px;
+
+/* ======================================================
+   GROUPED CARD
+====================================================== */
+
+.grouped-agenda-card {
+  padding: 0;
 }
 
-.agenda-row .agenda-time {
-  width: 170px !important;
-  min-width: 170px !important;
-  max-width: 170px !important;
-
-  white-space: nowrap;
-
-  flex-shrink: 0;
-}
-.agenda-row .agenda-title {
+.grouped-agenda-card .agenda-row {
   margin: 0;
 }
 
-/* ===== LUNCH ===== */
+.grouped-agenda-card .agenda-row + .agenda-row {
+  border-top: 1px solid #edf2f7;
+}
+
+
+/* ======================================================
+   TIME
+====================================================== */
+
+.agenda-time {
+  font-size: 16px;
+
+  font-weight: 700;
+
+  color: #143d66;
+
+  line-height: 1.4;
+
+  white-space: nowrap;
+
+  letter-spacing: -0.2px;
+}
+
+
+/* ======================================================
+   CONTENT
+====================================================== */
+
+.agenda-content {
+  min-width: 0;
+}
+
+.agenda-title {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+
+  margin: 0;
+
+  font-size: 17px;
+
+  line-height: 1.45;
+
+  font-weight: 700;
+
+  color: #183b63;
+}
+
+.agenda-title i {
+  margin-top: 3px;
+
+  font-size: 15px;
+
+  color: #5c7d99;
+
+  flex-shrink: 0;
+}
+
+.agenda-desc {
+  margin-top: 8px;
+
+  font-size: 14px;
+
+  line-height: 1.7;
+
+  color: #5f7285;
+}
+
+.agenda-speakers {
+  margin-top: 10px;
+
+  font-size: 13px;
+
+  line-height: 1.6;
+
+  color: #607284;
+}
+
+
+/* ======================================================
+   REGISTRATION
+====================================================== */
+
+.agenda-card.registration {
+  background: #eef4f9;
+
+  border-left-color: #8fb1cb;
+}
+
+.agenda-card.registration .agenda-title {
+  color: #234f78;
+}
+
+
+/* ======================================================
+   WELCOME / CLOSING
+====================================================== */
+
+.agenda-card.welcome,
+.agenda-card.closing {
+  background: #f2f6fa;
+
+  border-left-color: #6f95b5;
+}
+
+.agenda-card.welcome .agenda-title,
+.agenda-card.closing .agenda-title {
+  color: #234b71;
+}
+
+
+/* ======================================================
+   BREAK / COFFEE
+====================================================== */
+
+.agenda-card.break,
 .agenda-card.lunch {
-  background: #eef4f8;
-  border: 1px solid #d9e5ef;
-  border-left: 4px solid #7fa4bf;
+  background: #fbf7f2;
+
+  border-left-color: #c49a6c;
 }
 
+.agenda-card.break .agenda-title,
 .agenda-card.lunch .agenda-title {
-  color: #355f7c;
+  color: #7a5b3f;
 }
 
+.agenda-card.break i,
 .agenda-card.lunch i {
-  color: #7fa4bf;
+  color: #b68658;
 }
+
+
+/* ======================================================
+   MOBILE
+====================================================== */
+
+@media (max-width: 768px) {
+
+  .agenda-row {
+    grid-template-columns: 1fr;
+
+    gap: 10px;
+
+    padding: 22px 20px;
+  }
+
+  .agenda-time {
+    font-size: 15px;
+  }
+
+  .agenda-title {
+    font-size: 16px;
+  }
+
+  .agenda-day-label {
+    font-size: 16px;
+  }
+}
+
