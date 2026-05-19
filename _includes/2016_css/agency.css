@@ -776,24 +776,30 @@ body {
 }
 
 .agenda-card.break {
-  background: #f8f5f1;            
-  border: 1px solid #eadfce;       
+  background: #fdf8f2;
+  border: 1px solid #f0e2d0;
+  border-left: 4px solid #c7a17a;
   display: flex;
   gap: 10px;
+  align-items: flex-start;
 }
 
 /* icon */
 .agenda-card.break i {
-  color: #c7a17a;                 
+  color: #c7a17a;
   font-size: 16px;
 }
 
 /* text */
 .agenda-card.break .agenda-title {
-  color: #7a5c3e;             
+  color: #7a5c3e;
   font-weight: 600;
 }
 
+/* PUSH TITLE RIGHT */
+.agenda-card.break .agenda-content {
+  padding-left: 18px;
+}
 /* ICON ALIGNMENT */
 .agenda-title {
   display: flex;
@@ -1117,27 +1123,9 @@ section#contact {
   color: #355f7c;
 }
 
-/* ===== BREAK (keep your warm tone but refine) ===== */
-.agenda-card.break {
-  background: #fdf8f2;
-  border: 1px solid #f0e2d0;
-  border-left: 4px solid #c7a17a;
-}
 
-/* ===== LUNCH ===== */
-.agenda-card.lunch {
-  background: #eef4f8;
-  border: 1px solid #d9e5ef;
-  border-left: 4px solid #7fa4bf;
-}
 
-.agenda-card.lunch .agenda-title {
-  color: #355f7c;
-}
 
-.agenda-card.lunch i {
-  color: #7fa4bf;
-}
 
 .venue-card {
   background: #ffffff;
@@ -1683,5 +1671,28 @@ html {
 
 .agenda-row .agenda-title {
   margin: 0;
+}
+
+/* ===== LUNCH ===== */
+.agenda-card.lunch {
+  background: #eef4f8;
+  border: 1px solid #d9e5ef;
+  border-left: 4px solid #7fa4bf;
+}
+
+.agenda-card.lunch .agenda-title {
+  color: #355f7c;
+}
+
+.agenda-card.lunch i {
+  color: #7fa4bf;
+}
+
+
+
+
+
+
+	
   line-height: 1.45;
 }
