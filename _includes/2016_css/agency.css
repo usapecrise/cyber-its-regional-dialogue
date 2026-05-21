@@ -1738,53 +1738,38 @@ html {
   font-size: 22px;
   font-weight: 800;
   text-transform: uppercase;
-  margin: 0 0 10px;
+  line-height: 1.3;
+  margin: 0 0 14px;
 }
 
 .register-date {
   color: #6b7b88;
-  font-size: 18px;
-  margin-bottom: 18px;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 22px;
 }
 
 .register-hosted {
-  font-size: 14px !important;
+  font-size: 13px !important;
   color: #7b8794 !important;
   line-height: 1.5;
-  margin-bottom: 26px !important;
+  margin-bottom: 24px !important;
 }
 
 .register-copy p {
   color: #002b3f;
-  font-size: 18px;
-  line-height: 1.65;
-  margin-bottom: 22px;
-}
-
-.register-note-box {
-  margin-top: 28px;
-  padding: 20px;
-  border: 1px solid #dfe7ee;
-  border-radius: 12px;
-  background: #f8fafc;
-}
-
-.register-note-box span {
-  display: block;
-  color: #9aa6b2;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  font-size: 13px;
-  font-weight: 700;
-  margin-bottom: 8px;
+  font-size: 15.5px;
+  line-height: 1.75;
+  margin-bottom: 18px;
 }
 
 .register-note-box p {
-  font-size: 16px;
-  line-height: 1.5;
+  font-size: 14px;
+  line-height: 1.6;
   margin: 0;
 }
-
 /* FORM PANEL */
 .register-form-panel {
   position: relative;
