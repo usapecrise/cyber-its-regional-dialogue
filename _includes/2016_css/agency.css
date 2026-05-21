@@ -1735,27 +1735,27 @@ html {
 
 .register-copy h3 {
   color: #163a5f;
-  font-size: 1.6rem !important;
+  font-size: 1.9rem;
   font-weight: 800;
   text-transform: uppercase;
   line-height: 1.25;
-  margin: 0 0 12px;
+  margin: 0 0 14px;
 }
 
 .register-date {
   color: #6b7b88;
-  font-size: 0.9rem !important;
+  font-size: 1rem;
   font-weight: 600;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 }
 
 .register-copy p {
   color: #002b3f;
-  font-size: 0.96rem !important;
-  line-height: 1.7;
-  margin-bottom: 16px;
+  font-size: 1.05rem;
+  line-height: 1.75;
+  margin-bottom: 18px;
 }
 
 .register-note-box span {
@@ -1763,13 +1763,13 @@ html {
   color: #9aa6b2;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  font-size: 0.72rem !important;
+  font-size: 0.78rem;
   font-weight: 700;
   margin-bottom: 8px;
 }
 
 .register-note-box p {
-  font-size: 0.9rem !important;
+  font-size: 0.98rem;
   line-height: 1.55;
   margin: 0;
 }
