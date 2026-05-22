@@ -1714,6 +1714,8 @@ html {
 }
 .register-section {
   background: #eef4f8;
+  padding-top: 40px !important;
+  padding-bottom: 60px !important;
 }
 
 .register-card {
