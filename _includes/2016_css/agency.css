@@ -1771,7 +1771,7 @@ html {
 
 .register-note-box span {
   display: block;
-  color: #9aa6b2;
+  color: #355f7c;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   font-size: 1rem;
@@ -1780,10 +1780,10 @@ html {
 }
 
 .register-note-box p {
-  font-size: 1.18rem;
+  font-size: 1rem;
   line-height: 1.7;
-  margin: 0;
 }
+
 /* FORM PANEL */
 .register-form-panel {
   position: relative;
