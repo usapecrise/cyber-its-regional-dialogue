@@ -1770,13 +1770,8 @@ html {
 }
 
 .register-note-box span {
-  display: block;
-  color: #355f7c;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  font-size: 1rem;
-  font-weight: 700;
-  margin-bottom: 10px;
+  font-size: 30px !important;
+  color: red !important;
 }
 
 .register-note-box p {
